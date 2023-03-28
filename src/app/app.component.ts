@@ -3,8 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'my-counter-app';
+  counter = 0;
+  appName = 'Simple Counter';
+  increment() {
+    this.counter++;
+  }
+  decrement() {
+    this.counter--;
+  }
 }
