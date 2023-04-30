@@ -1,1 +1,5 @@
-<p>input works!</p>
+<div>
+  <h2>{{ name }}</h2>
+  <h2>Name from input (two-way binding): {{ inputName }}</h2>
+  <input [(ngModel)]="inputName" placeholder="Enter your name" />
+</div>
