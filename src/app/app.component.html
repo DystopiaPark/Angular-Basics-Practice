@@ -1,5 +1,10 @@
 <div>
-  <h1>{{ appName }}</h1>
+  <h1>{{ title }}</h1>
+  <h2>{{ name }}</h2>
+  <h2>Name from input: {{ inputName }}</h2>
+  <h2>Name from second input: {{ inputNameTwo }}</h2>
+  <input [(ngModel)]="inputName" placeholder="Enter your name" />
+  <input (ngModel)="(inputNameTwo)" placeholder="Enter your name" />
   <button (click)="increment()">Increment</button>
   <p>{{ counter }}</p>
   <button (click)="decrement()">Decrement</button>
