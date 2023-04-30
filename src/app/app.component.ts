@@ -10,14 +10,6 @@ export class AppComponent {
   title = 'Counter app';
   name = 'Filip';
   inputName = '';
-  counter = 0;
-
-  increment() {
-    this.counter++;
-  }
-  decrement() {
-    this.counter--;
-  }
 }
 
 // template: `

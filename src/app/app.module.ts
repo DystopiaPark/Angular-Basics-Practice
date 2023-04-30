@@ -4,9 +4,12 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
 
 import { AppComponent } from './app.component';
 import { ColorbuttonComponent } from './colorbutton/colorbutton.component';
+import { CounterComponent } from './counter/counter.component';
+import { InputComponent } from './input/input.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, ColorbuttonComponent],
+  declarations: [AppComponent, ColorbuttonComponent, CounterComponent, InputComponent, HeaderComponent],
   imports: [
     BrowserModule,
     FormsModule, // Add FormsModule to imports
