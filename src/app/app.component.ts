@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'Counter app';
   name = 'Filip';
   inputName = '';
   counter = 0;
-  inputNameTwo = '';
 
   increment() {
     this.counter++;
