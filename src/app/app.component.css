@@ -1,3 +1,7 @@
 button {
   display: block;
 }
+div {
+  border: 2px solid purple;
+  padding: 0 1rem;
+}
