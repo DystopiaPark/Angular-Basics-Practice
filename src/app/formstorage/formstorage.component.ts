@@ -27,4 +27,8 @@ export class FormstorageComponent {
     this.passwordInput.nativeElement.value = '';
     console.log(this.array);
   }
+
+  onRemove(index: number) {
+    this.array.splice(index, 1);
+  }
 }
