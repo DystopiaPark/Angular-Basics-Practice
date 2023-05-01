@@ -1,1 +1,9 @@
-<p>recievingcards works!</p>
+<div>
+  <div *ngFor="let object of array; let i = index">
+    <p>Name: {{ object.name }}</p>
+    <p>Surname: {{ object.surname }}</p>
+    <p>e-mail: {{ object.email }}</p>
+    <p>Password: {{ object.password }}</p>
+    <button (click)="onRemove(i)">Remove</button>
+  </div>
+</div>
