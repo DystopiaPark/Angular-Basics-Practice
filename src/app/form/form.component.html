@@ -1,1 +1,20 @@
-<p>form works!</p>
+<div>
+  <h2>Form Section</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="name">Name: </label>
+    <input #nameInput type="text" name="name" />
+    <label for="surname">Surname: </label>
+    <input #surnameInput type="text" name="surname" />
+    <label for="email">e-mail: </label>
+    <input #emailInput type="email" name="email" />
+    <label for="password">Password: </label>
+    <input #passwordInput type="password" name="password" />
+    <button type="submit">Submit</button>
+  </form>
+  <div>
+    <p>Name: {{ name }}</p>
+    <p>Surname: {{ surname }}</p>
+    <p>e-mail: {{ email }}</p>
+    <p>Password: {{ password }}</p>
+  </div>
+</div>
