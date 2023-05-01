@@ -8,9 +8,10 @@ import { CounterComponent } from './counter/counter.component';
 import { InputComponent } from './input/input.component';
 import { HeaderComponent } from './header/header.component';
 import { ColorbuttontextComponent } from './colorbuttontext/colorbuttontext.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
-  declarations: [AppComponent, ColorbuttonComponent, CounterComponent, InputComponent, HeaderComponent, ColorbuttontextComponent],
+  declarations: [AppComponent, ColorbuttonComponent, CounterComponent, InputComponent, HeaderComponent, ColorbuttontextComponent, FormComponent],
   imports: [
     BrowserModule,
     FormsModule, // Add FormsModule to imports
