@@ -1,7 +1,7 @@
 <div>
   <h2>Color Button and Text Section</h2>
-  <button (click)="changeColor('red')">Red</button>
-  <button (click)="changeColor('green')">Green</button>
-  <button (click)="changeColor('blue')">Blue</button>
+  <button (click)="changeColorAndText('red', 'Hi Guy!')">Red</button>
+  <button (click)="changeColorAndText('green', 'Hello Friend!')">Green</button>
+  <button (click)="changeColorAndText('blue', 'Hello Buddy!')">Blue</button>
   <p [style.color]="color">{{ currentMessage }}</p>
 </div>

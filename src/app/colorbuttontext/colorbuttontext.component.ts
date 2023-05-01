@@ -8,16 +8,10 @@ import { Component } from '@angular/core';
 export class ColorbuttontextComponent {
   messages: string[] = ['Hello world!', 'Hello sturd!', 'Hello goord!'];
   color: string = 'black';
+  currentMessage: string = 'The text will appear here';
 
-  currentMessage: string = this.messages[0];
-
-  changeMessage(index: number) {
-    if (index > 3) {
-    }
-    this.currentMessage == this.messages[index];
-  }
-
-  changeColor(newColor: string) {
+  changeColorAndText(newColor: string, text: string) {
     this.color = newColor;
+    this.currentMessage = text;
   }
 }
