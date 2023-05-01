@@ -11,4 +11,12 @@
     <input #passwordInput type="password" name="password" />
     <button type="submit">Submit</button>
   </form>
+  <div>
+    <div *ngFor="let object of array">
+      <p>Name: {{ object.name }}</p>
+      <p>Surname: {{ object.surname }}</p>
+      <p>e-mail: {{ object.email }}</p>
+      <p>Password: {{ object.password }}</p>
+    </div>
+  </div>
 </div>

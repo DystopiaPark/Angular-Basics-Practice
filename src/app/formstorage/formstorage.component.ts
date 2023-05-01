@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-formstorage',
@@ -6,10 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./formstorage.component.css'],
 })
 export class FormstorageComponent {
-  name: string = '';
-  surname: string = '';
-  email: string = '';
-  password: string = '';
+  array: { name: string; surname: string; email: string; password: string }[] =
+    [];
 
-  onSubmit() {}
+  @ViewChild('nameInput') nameInput!: ElementRef;
+  @ViewChild('surnameInput') surnameInput!: ElementRef;
+  @ViewChild('emailInput') emailInput!: ElementRef;
+  @ViewChild('passwordInput') passwordInput!: ElementRef;
+
+  onSubmit() {
+    this.array.push({
+      name: this.nameInput.nativeElement.value,
+      surname: this.surnameInput.nativeElement.value,
+      email: this.emailInput.nativeElement.value,
+      password: this.passwordInput.nativeElement.value,
+    });
+    this.nameInput.nativeElement.value = '';
+    this.surnameInput.nativeElement.value = '';
+    this.emailInput.nativeElement.value = '';
+    this.passwordInput.nativeElement.value = '';
+    console.log(this.array);
+  }
 }
