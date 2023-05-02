@@ -10,8 +10,6 @@ import { HeaderComponent } from './header/header.component';
 import { ColorbuttontextComponent } from './colorbuttontext/colorbuttontext.component';
 import { FormComponent } from './form/form.component';
 import { FormstorageComponent } from './formstorage/formstorage.component';
-import { RecievingcomponentComponent } from './recievingcomponent/recievingcomponent.component';
-import { SendingcomponentComponent } from './sendingcomponent/sendingcomponent.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +21,6 @@ import { SendingcomponentComponent } from './sendingcomponent/sendingcomponent.c
     ColorbuttontextComponent,
     FormComponent,
     FormstorageComponent,
-    RecievingcomponentComponent,
-    SendingcomponentComponent,
   ],
   imports: [
     BrowserModule,
