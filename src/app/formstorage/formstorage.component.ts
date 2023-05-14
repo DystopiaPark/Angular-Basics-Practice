@@ -7,7 +7,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class FormstorageComponent {
   array: { name: string; surname: string; email: string; password: string }[] =
-    [];
+    [{name: "Quackers", surname: "Brackers", email: "at@gmail.com", password: "blablabla"}];
 
   @ViewChild('nameInput') nameInput!: ElementRef;
   @ViewChild('surnameInput') surnameInput!: ElementRef;

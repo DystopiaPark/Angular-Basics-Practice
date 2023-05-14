@@ -20,4 +20,5 @@
       <button (click)="onRemove(i)">Remove</button>
     </div>
   </div>
+  <app-formstorage-child [array]="array" (deleted)="onRemove($event)"></app-formstorage-child>
 </div>

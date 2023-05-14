@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-formstorage-child',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./formstorage-child.component.css']
 })
 export class FormstorageChildComponent {
-
+  @Input() array: { name: string; surname: string; email: string; password: string }[] = [];
+  @Output() deleted = new EventEmitter(); 
 }

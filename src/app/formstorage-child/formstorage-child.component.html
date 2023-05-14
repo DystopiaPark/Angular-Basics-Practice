@@ -1,1 +1,10 @@
-<p>formstorage-child works!</p>
+<h2>Child Component within FormStorage!</h2>
+<div>
+  <div *ngFor="let object of array; let i = index">
+    <p>Name: {{ object.name }}</p>
+    <p>Surname: {{ object.surname }}</p>
+    <p>Password: {{ object.password }}</p>
+    <p>e-mail: {{ object.email }}</p>
+    <button (click)="deleted.emit(i)">Remove both!</button>
+  </div>
+</div>
