@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { ColorbuttontextComponent } from './colorbuttontext/colorbuttontext.component';
 import { FormComponent } from './form/form.component';
 import { FormstorageComponent } from './formstorage/formstorage.component';
+import { FormstorageChildComponent } from './formstorage-child/formstorage-child.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { FormstorageComponent } from './formstorage/formstorage.component';
     ColorbuttontextComponent,
     FormComponent,
     FormstorageComponent,
+    FormstorageChildComponent,
   ],
   imports: [
     BrowserModule,
