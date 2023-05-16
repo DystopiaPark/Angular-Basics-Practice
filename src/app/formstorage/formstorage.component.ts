@@ -1,4 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { User } from '../common/models/user';
+
+const emptyUser: User = {
+  name: "",
+  surname: "",
+  email: "",
+  password: "",
+}
 
 @Component({
   selector: 'app-formstorage',
@@ -27,6 +35,7 @@ export class FormstorageComponent {
     this.passwordInput.nativeElement.value = '';
     console.log(this.array);
   }
+  selectedUser = emptyUser;
 
   onRemove(index: number) {
     this.array.splice(index, 1);
